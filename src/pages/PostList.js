@@ -45,6 +45,12 @@ const PostList = (pros) => {
             </Grid>
             <Button is_float text="+" _onClick={() => {history.push('/write');}}></Button>
         </React.Fragment>
+
+        // <div>
+        //     <SideBar/>
+        //     <Table/>
+        //     <DataList/>
+        // </div>
     )
 }
 

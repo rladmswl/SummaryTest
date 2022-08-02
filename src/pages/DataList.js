@@ -11,13 +11,18 @@ const DataList = (props) => {
     ];
 
     return (
-      <React.Fragment>
-        <Grid padding="16px" bg="#EFF6FF">
-          {noti.map((n) => {
+      // <React.Fragment>
+      //   <Grid padding="16px" bg="#EFF6FF">
+      //     {noti.map((n) => {
+      //       return <Card {...n} key={n.post_id} />;
+      //     })}
+      //   </Grid>
+      // </React.Fragment>
+      <div>
+        {noti.map((n) => {
             return <Card {...n} key={n.post_id} />;
           })}
-        </Grid>
-      </React.Fragment>
+      </div>
     );
 }
 
