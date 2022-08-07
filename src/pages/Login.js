@@ -36,7 +36,14 @@ const Login = (props) => {
           로그인
         </Text>
 
-        <Grid padding="16px 0px">
+        <Input
+            // label="아이디"
+            placeholder="아이디를 입력해주세요."
+            _onChange={(e) => {
+              setId(e.target.value);
+            }}
+          />
+        {/* <Grid padding="16px 0px">
           <Input
             label="아이디"
             placeholder="아이디를 입력해주세요."
@@ -44,11 +51,11 @@ const Login = (props) => {
               setId(e.target.value);
             }}
           />
-        </Grid>
+        </Grid> */}
 
         <Grid padding="16px 0px">
           <Input
-            label="패스워드"
+            // label="패스워드"
             placeholder="패스워드 입력해주세요."
             type="password"
             _onChange={(e) => {

@@ -28,16 +28,12 @@ const PostList = (pros) => {
     return (
         <React.Fragment>
             <Grid padding="16px">
-                {/* <Grid is_flex>
-                    <SideBar/>
-                    <Table/>
-                    <DataList/>
-                </Grid> */}
                 <Grid is_flex >
-                    <Grid >
+                    {/* <Grid >
                         <SideBar/>
-                    </Grid>
-                    <Grid center>
+                    </Grid> */}
+                    <SideBar/>
+                    <Grid center bg="#FFF6FF">
                         <Table/>
                         <DataList/>
                     </Grid>
@@ -46,11 +42,6 @@ const PostList = (pros) => {
             <Button is_float text="+" _onClick={() => {history.push('/write');}}></Button>
         </React.Fragment>
 
-        // <div>
-        //     <SideBar/>
-        //     <Table/>
-        //     <DataList/>
-        // </div>
     )
 }
 

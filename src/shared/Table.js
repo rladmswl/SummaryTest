@@ -1,12 +1,12 @@
 import Item from "../shared/Item";
 
-const Table = ({ onEdit, onRemove, List }) => {
+const Table = ({ onEdit, onRemove, DataList }) => {
   return (
     <div className="Table">
       <h2>자료 리스트</h2>
-      <h4>{List.length}개의 자료가 있습니다.</h4>
+      <h4>{DataList.length}개의 자료가 있습니다.</h4>
       <div>
-        {List.map((it) => (
+        {DataList.map((it) => (
           <Item key={it.id} {...it} onEdit={onEdit} onRemove={onRemove} />
         ))}
       </div>
@@ -15,7 +15,7 @@ const Table = ({ onEdit, onRemove, List }) => {
 };
 
 Table.defaultProps = {
-  List: []
+  DataList: []
 };
 
 export default Table;

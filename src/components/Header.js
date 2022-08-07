@@ -22,9 +22,19 @@ const Header = (props) => {
     console.log(sessionStorage.getItem(_session_key));
     console.log(is_session);
 
+    // function HomeIcon(props) {
+    //     return (
+    //       <SvgIcon {...props}>
+    //         <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    //       </SvgIcon>
+    //     );
+    //   }
+
+
     if(is_login){  // 로그인 되어 있으면 header를 로그아웃으로 변경
         return (
             <Grid is_flex padding="16px" center>
+                {/* <HomeIcon /> */}
                 <Button text="home" _onClick={() => {history.push("/");}}></Button>
                 <Text margin='0px' size='50px' bold>SHORT</Text>
                 <Button text="로그아웃" _onClick={() => {dispatch(userActions.logOut({}));}}></Button>
